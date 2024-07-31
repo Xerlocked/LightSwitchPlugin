@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "XLightSwitch",
+	"Description": "Turn On/Off Directional Light in Active World",
+	"Category": "Other",
+	"CreatedBy": "xerlock",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "XLightSwitch",
+			"Type": "Editor",
+			"LoadingPhase": "PostDefault"
+		}
+	]
+}
