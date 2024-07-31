@@ -50,6 +50,11 @@ void FXLightSwitchModule::ShutdownModule()
 
 void FXLightSwitchModule::PluginButtonClicked()
 {
+	ExecuteLight();
+}
+
+void FXLightSwitchModule::ExecuteLight()
+{
 	if(HasDirectionalLight())
 	{
 		bLightSwitch = !bLightSwitch;
@@ -60,13 +65,6 @@ void FXLightSwitchModule::PluginButtonClicked()
 		
 		FXLightSwitchStyle::UpdateIcons(bLightSwitch);
 	}
-}
-
-void FXLightSwitchModule::ExecuteLight()
-{
-	static bool bLightState = true;
-	bLightState = !bLightState;
-	FXLightSwitchStyle::UpdateIcons(bLightState);
 }
 
 bool FXLightSwitchModule::HasDirectionalLight()
